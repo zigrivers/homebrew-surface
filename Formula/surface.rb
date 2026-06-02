@@ -8,7 +8,7 @@ class Surface < Formula
   depends_on "node@22"
 
   def install
-    system "npm", "install", *std_npm_args(prefix: false), "."
+    system "npm", "install", *std_npm_args(prefix: false), "--min-release-age=0", "."
     bin.install_symlink libexec/"bin/surface"
   end
 
