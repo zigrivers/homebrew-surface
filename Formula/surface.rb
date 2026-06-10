@@ -1,8 +1,12 @@
+# frozen_string_literal: true
+
+# Surface Homebrew formula.
 class Surface < Formula
   desc "Local-first UI audit CLI and MCP server"
   homepage "https://github.com/zigrivers/surface"
-  url "https://registry.npmjs.org/@zigrivers/surface/-/surface-0.1.1.tgz"
-  sha256 "fd53bbece7abb0a7e625cb05bc345e6399bd2317a9c684a9ee9a9f267dccaf7e"
+  # Keep URL and sha256 in sync with the published @zigrivers/surface npm tarball.
+  url "https://registry.npmjs.org/@zigrivers/surface/-/surface-0.2.3.tgz"
+  sha256 "b9698775b66507b8f5d20a9a1823309dde61be1ccd860a086aacbfe3f1906314"
   license "MIT"
 
   depends_on "node@22"
